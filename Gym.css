@@ -1,0 +1,198 @@
+ /* here i given a backgroud image and boundry to body */
+ body {
+     margin: 2px;
+     padding: 0px;
+     font-family: 'Tinos', serif;
+     background-image: url("./images/gym.jpg");
+     background-size: 100%;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+ }
+
+ /*here i given height width to the image and filter invert is used to change the image colour white to or black to white */
+ .left img {
+     height: 80px;
+     width: 80px;
+     filter: invert(80);
+ }
+
+ /*here display inline block use to make content in horizontal line and block use to fix length or area of content position absolute use when we want to move content from its parent position*/
+ .left {
+     display: inline-block;
+     position: absolute;
+     text-align: center;
+     top: 0px;
+     width: 80px;
+     padding: 5px;
+     margin-top: 1px;
+     /*border: 2px solid black;*/
+ }
+
+ .name {
+     color: white;
+ }
+
+ .center {
+     display: block;
+     width: 25%;
+     margin: 40px auto;
+     /*border: 2px solid black;*/
+ }
+
+ .right {
+     display: inline-block;
+     position: absolute;
+     right: 30px;
+     top: 45px;
+     width: 150px;
+     color: rgb(251, 252, 252);
+     margin-inline-end: 2px;
+
+     /*border: 2px solid black;*/
+ }
+
+ .right #one,
+ #two {
+     background-color: rgba(50, 42, 42, 0.361);
+     color: white;
+ }
+
+ .navbar ul li {
+     margin: 3px;
+     /*border: 1px solid rgb(166, 154, 154);*/
+     padding: 2px;
+     display: inline-block;
+ }
+
+ .home {
+     display: inline-block;
+ }
+
+ .navbar ul li a:hover,
+ .home li>a {
+     background-color: rgb(124, 116, 116);
+     text-decoration: underline;
+     border: 2px solid white;
+     color: rgb(247, 247, 247);
+ }
+
+ .navbar ul>li a {
+     text-decoration: none;
+     color: aliceblue;
+ }
+
+ .form {
+     position: relative;
+     top: 80px;
+     left: 920px;
+     border: 2px solid rgb(241, 52, 0);
+     height: 500px;
+     width: 500px;
+ }
+
+ .form p {
+     font-size: 40px;
+     text-decoration: underline;
+     text-align: center;
+     color: aliceblue;
+     font-weight: bold;
+     animation-name: ankit;
+     animation-duration: 5s;
+     animation-iteration-count: 25;
+     animation-fill-mode: initial;
+ }
+
+ @keyframes ankit {
+     0% {
+         color: red;
+     }
+
+     25% {
+         color: blue;
+     }
+
+     50% {
+         color: rgb(10, 209, 244);
+     }
+
+     75% {
+         color: rgb(130, 238, 146);
+     }
+
+     100% {
+         color: rgb(15, 2, 15);
+     }
+ }
+
+ #dee p {
+     font-size: 30px;
+     color: black;
+     text-decoration: none;
+     text-align: center;
+ }
+
+ .form #dee input,
+ select {
+     width: 300px;
+     font-size: large;
+     text-align: center;
+     /*margin: 5px;*/
+     position: relative;
+     left: 8px;
+ }
+
+ #dee #item2 {
+     position: relative;
+     left: 11px;
+ }
+
+ #dee #item3 {
+     position: relative;
+     right: 12px;
+ }
+
+ #dee #item4 {
+     position: relative;
+     right: 12px;
+ }
+
+ #item6 {
+     color: black;
+     position: relative;
+     left: 100px;
+ }
+
+ #item6 input:hover {
+     background-color: green;
+     text-align: center;
+ }
+
+ @media screen and (max-width: 420px) {
+     body {
+         margin: 2px;
+         padding: 2px;
+         background-image: url("./images/gym.jpg");
+         background-size: 100% 100%;
+         background-attachment: fixed;
+         background-repeat: no-repeat;
+     }
+ }
+
+ .ad img {
+     display: block;
+     position: relative;
+     bottom: 200px;
+     height: 300px;
+     width: 300px;
+ }
+
+ footer {
+     border: 2px solid rgb(0, 0, 0);
+     color: rgb(186, 166, 141);
+     font-size: 80px;
+ }
+
+ footer #o {
+     font-weight: bold;
+     text-decoration: underline;
+ }
